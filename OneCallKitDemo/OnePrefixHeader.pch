@@ -1,0 +1,30 @@
+//
+//  OnePrefixHeader.pch
+//  OneCallKitDemo
+//
+//  Created by wintel on 16/8/18.
+//  Copyright © 2016年 wintel. All rights reserved.
+//
+
+#ifndef OnePrefixHeader_pch
+#define OnePrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* OnePrefixHeader_pch */
+
+#import "AppDelegate.h"
+#import "JSONFighting.h"
+
+
+
+#import "CallBlockingIdentificationViewController.h"
+#import "CallVoIPManagerViewController.h"
+
+
+#define AppsDelegate ((AppDelegate *)([UIApplication sharedApplication].delegate))
+
+#define insiderUrl @"onecallkitdemoinsider://"
+#define insiderUrlPartition @".orz/"
+#define insiderUrlTypeOpen @"openpage"

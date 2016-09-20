@@ -1,0 +1,1382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC0223231D8FDB0F00D3BF11 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0223221D8FDB0F00D3BF11 /* CallDirectoryHandler.m */; };
+		FC0223271D8FDB0F00D3BF11 /* OneCallIdentification2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC02231F1D8FDB0F00D3BF11 /* OneCallIdentification2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC19A4A81D891FE300562121 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC19A4A71D891FE300562121 /* CallDirectoryHandler.m */; };
+		FC19A4AC1D891FE300562121 /* OneCallBlocking.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC19A4A41D891FE300562121 /* OneCallBlocking.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC19A4B81D89200600562121 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC19A4B71D89200600562121 /* CallDirectoryHandler.m */; };
+		FC19A4BC1D89200600562121 /* OneCallIdentification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC19A4B41D89200500562121 /* OneCallIdentification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC1D586F1D6AE51A006048F4 /* WTCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1D586E1D6AE51A006048F4 /* WTCallManager.m */; };
+		FC1D58711D6AE57E006048F4 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D58701D6AE57E006048F4 /* CallKit.framework */; };
+		FC1D58741D6AE6CC006048F4 /* WTCall.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1D58731D6AE6CC006048F4 /* WTCall.m */; };
+		FC23B6EE1D6AD5DA00F127C9 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC23B6ED1D6AD5DA00F127C9 /* IntentHandler.m */; };
+		FC23B6F21D6AD5DA00F127C9 /* CallKitIntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC23B6EA1D6AD5DA00F127C9 /* CallKitIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC23B6F71D6AE1E900F127C9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC23B6F61D6AE1E900F127C9 /* Accelerate.framework */; };
+		FC23B6F81D6AE1F100F127C9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC23B6F61D6AE1E900F127C9 /* Accelerate.framework */; };
+		FC2C8A241D89255B009AF960 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D58701D6AE57E006048F4 /* CallKit.framework */; };
+		FC2C8A251D892561009AF960 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D58701D6AE57E006048F4 /* CallKit.framework */; };
+		FC301E541D6A90E8003950DA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC301E531D6A90E8003950DA /* NotificationCenter.framework */; };
+		FC301E581D6A90E9003950DA /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC301E571D6A90E9003950DA /* TodayViewController.m */; };
+		FC301E5B1D6A90E9003950DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC301E591D6A90E9003950DA /* MainInterface.storyboard */; };
+		FC301E5F1D6A90E9003950DA /* OneCallToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC301E511D6A90E8003950DA /* OneCallToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC3DC32A1D6F035E00A2FA8E /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DC3271D6F035E00A2FA8E /* BaseNavigationViewController.m */; };
+		FC3DC32B1D6F035E00A2FA8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DC3291D6F035E00A2FA8E /* BaseViewController.m */; };
+		FC571D061D6AC63700E86CEC /* CallDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC571D051D6AC63700E86CEC /* CallDirectoryManager.m */; };
+		FC634C321D7038DA0024E7A2 /* PushPKRegistryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC634C311D7038DA0024E7A2 /* PushPKRegistryDelegate.m */; };
+		FC75643B1D6BF21D0018C169 /* ProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75643A1D6BF21D0018C169 /* ProviderDelegate.m */; };
+		FC7564821D6BF9400018C169 /* NSURL+StartCallConvertible.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7564811D6BF9400018C169 /* NSURL+StartCallConvertible.m */; };
+		FC7564851D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7564841D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.m */; };
+		FC7564871D6C1B1A0018C169 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564861D6C1B1A0018C169 /* Intents.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC7564881D6C1B220018C169 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D58701D6AE57E006048F4 /* CallKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC75648A1D6C1B280018C169 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564891D6C1B280018C169 /* PushKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC75648D1D6C1F260018C169 /* IntentsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75648C1D6C1F260018C169 /* IntentsInfo.m */; };
+		FC7564911D6C252E0018C169 /* Ringtone.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC7564901D6C252E0018C169 /* Ringtone.caf */; };
+		FC7564A31D6C29A70018C169 /* CallAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7564A21D6C29A70018C169 /* CallAudio.m */; };
+		FC7564A51D6C29B80018C169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564A41D6C29B80018C169 /* AVFoundation.framework */; };
+		FC7564A71D6C29C10018C169 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564A61D6C29C10018C169 /* AudioToolbox.framework */; };
+		FC7564A91D6C3E960018C169 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564A81D6C3E960018C169 /* CoreAudio.framework */; };
+		FC7564AF1D6C3F010018C169 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564AA1D6C3F010018C169 /* CoreFoundation.framework */; };
+		FC7564B01D6C3F010018C169 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564AB1D6C3F010018C169 /* CoreTelephony.framework */; };
+		FC7564B11D6C3F010018C169 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564AC1D6C3F010018C169 /* CoreText.framework */; };
+		FC7564B21D6C3F010018C169 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564AD1D6C3F010018C169 /* MobileCoreServices.framework */; };
+		FC7564B31D6C3F010018C169 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564AE1D6C3F010018C169 /* QuartzCore.framework */; };
+		FC7564CA1D6C426F0018C169 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564C91D6C426F0018C169 /* CoreGraphics.framework */; };
+		FC7564CC1D6C42740018C169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7564CB1D6C42740018C169 /* UIKit.framework */; };
+		FC7565BB1D6C64870018C169 /* CADebugMacros.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7565B41D6C64870018C169 /* CADebugMacros.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC7565BC1D6C64870018C169 /* CAStreamBasicDescription.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7565B71D6C64870018C169 /* CAStreamBasicDescription.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC7565BD1D6C64870018C169 /* CAXException.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7565B91D6C64870018C169 /* CAXException.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC7565C01D6C64B10018C169 /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7565BF1D6C64B10018C169 /* AudioController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC7A84211D647DC600DCF6BA /* CallBlockingIdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7A84201D647DC600DCF6BA /* CallBlockingIdentificationViewController.m */; };
+		FC7D52351D6D4FF1001E350D /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7D52321D6D4FF1001E350D /* icon_128x128.png */; };
+		FC7D52361D6D4FF1001E350D /* icon_128x128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7D52331D6D4FF1001E350D /* icon_128x128@2x.png */; };
+		FC7D52371D6D4FF1001E350D /* icon_128x128@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7D52341D6D4FF1001E350D /* icon_128x128@3x.png */; };
+		FC7E21EA1D657585002523E1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7E21E91D657585002523E1 /* MBProgressHUD.m */; };
+		FCBFFC241D65B566003C39BF /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBFFC231D65B566003C39BF /* JSONFighting.m */; };
+		FCBFFC311D65B813003C39BF /* CallDirectoryBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBFFC301D65B813003C39BF /* CallDirectoryBaseModel.m */; };
+		FCBFFC351D65B8C6003C39BF /* CallDirectoryPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBFFC341D65B8C6003C39BF /* CallDirectoryPhoneModel.m */; };
+		FCD628221D64792600C60155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD628211D64792600C60155 /* main.m */; };
+		FCD628251D64792600C60155 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD628241D64792600C60155 /* AppDelegate.m */; };
+		FCD628281D64792600C60155 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD628271D64792600C60155 /* HomeViewController.m */; };
+		FCD6282B1D64792600C60155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD628291D64792600C60155 /* Main.storyboard */; };
+		FCD6282D1D64792600C60155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6282C1D64792600C60155 /* Assets.xcassets */; };
+		FCD628301D64792600C60155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD6282E1D64792600C60155 /* LaunchScreen.storyboard */; };
+		FCE58CB91D670B5A00D3B263 /* CallVoIPManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE58CB81D670B5A00D3B263 /* CallVoIPManagerViewController.m */; };
+		FCE7DC111D6D73DC00714614 /* SimulateIncomingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE7DC101D6D73DC00714614 /* SimulateIncomingCallViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC0223251D8FDB0F00D3BF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD628151D64792600C60155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC02231E1D8FDB0F00D3BF11;
+			remoteInfo = OneCallIdentification2;
+		};
+		FC19A4AA1D891FE300562121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD628151D64792600C60155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC19A4A31D891FE300562121;
+			remoteInfo = OneCallBlocking;
+		};
+		FC23B6F01D6AD5DA00F127C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD628151D64792600C60155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC23B6E91D6AD5DA00F127C9;
+			remoteInfo = CallKitIntentsExtension;
+		};
+		FC7564371D6BEA0D0018C169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD628151D64792600C60155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC301E501D6A90E8003950DA;
+			remoteInfo = OneCallToday;
+		};
+		FCF9B47C1D89385D009102B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD628151D64792600C60155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC19A4B31D89200500562121;
+			remoteInfo = OneCallIdentification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC7E21E11D655BC6002523E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC19A4AC1D891FE300562121 /* OneCallBlocking.appex in Embed App Extensions */,
+				FC19A4BC1D89200600562121 /* OneCallIdentification.appex in Embed App Extensions */,
+				FC301E5F1D6A90E9003950DA /* OneCallToday.appex in Embed App Extensions */,
+				FC0223271D8FDB0F00D3BF11 /* OneCallIdentification2.appex in Embed App Extensions */,
+				FC23B6F21D6AD5DA00F127C9 /* CallKitIntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC0223121D8FC61A00D3BF11 /* CallKitIntentsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitIntentsExtension.entitlements; sourceTree = "<group>"; };
+		FC02231F1D8FDB0F00D3BF11 /* OneCallIdentification2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneCallIdentification2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0223211D8FDB0F00D3BF11 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		FC0223221D8FDB0F00D3BF11 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		FC0223241D8FDB0F00D3BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC02232B1D8FDB1A00D3BF11 /* OneCallIdentification2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneCallIdentification2.entitlements; sourceTree = "<group>"; };
+		FC19A4A41D891FE300562121 /* OneCallBlocking.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneCallBlocking.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC19A4A61D891FE300562121 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		FC19A4A71D891FE300562121 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		FC19A4A91D891FE300562121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC19A4B41D89200500562121 /* OneCallIdentification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneCallIdentification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC19A4B61D89200600562121 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		FC19A4B71D89200600562121 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		FC19A4B91D89200600562121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC19A4C01D8923F500562121 /* OneCallIdentification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneCallIdentification.entitlements; sourceTree = "<group>"; };
+		FC19A4C11D8923FC00562121 /* OneCallBlocking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneCallBlocking.entitlements; sourceTree = "<group>"; };
+		FC1D586D1D6AE51A006048F4 /* WTCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCallManager.h; sourceTree = "<group>"; };
+		FC1D586E1D6AE51A006048F4 /* WTCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCallManager.m; sourceTree = "<group>"; };
+		FC1D58701D6AE57E006048F4 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		FC1D58721D6AE6CC006048F4 /* WTCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCall.h; sourceTree = "<group>"; };
+		FC1D58731D6AE6CC006048F4 /* WTCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCall.m; sourceTree = "<group>"; };
+		FC1D58751D6AF4F7006048F4 /* OneCallKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OneCallKitDemo-Bridging-Header.h"; path = "Call Management/OneCallKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC23B6EA1D6AD5DA00F127C9 /* CallKitIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallKitIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC23B6EC1D6AD5DA00F127C9 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		FC23B6ED1D6AD5DA00F127C9 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		FC23B6EF1D6AD5DA00F127C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC23B6F61D6AE1E900F127C9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FC301E511D6A90E8003950DA /* OneCallToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneCallToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC301E531D6A90E8003950DA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FC301E561D6A90E8003950DA /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		FC301E571D6A90E9003950DA /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		FC301E5A1D6A90E9003950DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FC301E5C1D6A90E9003950DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC301E631D6A90F5003950DA /* OneCallToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneCallToday.entitlements; sourceTree = "<group>"; };
+		FC3DC3261D6F035E00A2FA8E /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		FC3DC3271D6F035E00A2FA8E /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		FC3DC3281D6F035E00A2FA8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FC3DC3291D6F035E00A2FA8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FC571D041D6AC63700E86CEC /* CallDirectoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallDirectoryManager.h; sourceTree = "<group>"; };
+		FC571D051D6AC63700E86CEC /* CallDirectoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryManager.m; sourceTree = "<group>"; };
+		FC634C301D7038DA0024E7A2 /* PushPKRegistryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushPKRegistryDelegate.h; sourceTree = "<group>"; };
+		FC634C311D7038DA0024E7A2 /* PushPKRegistryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushPKRegistryDelegate.m; sourceTree = "<group>"; };
+		FC7564391D6BF21D0018C169 /* ProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProviderDelegate.h; sourceTree = "<group>"; };
+		FC75643A1D6BF21D0018C169 /* ProviderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderDelegate.m; sourceTree = "<group>"; };
+		FC7564801D6BF9400018C169 /* NSURL+StartCallConvertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+StartCallConvertible.h"; sourceTree = "<group>"; };
+		FC7564811D6BF9400018C169 /* NSURL+StartCallConvertible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+StartCallConvertible.m"; sourceTree = "<group>"; };
+		FC7564831D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserActivity+StartCallConvertible.h"; sourceTree = "<group>"; };
+		FC7564841D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserActivity+StartCallConvertible.m"; sourceTree = "<group>"; };
+		FC7564861D6C1B1A0018C169 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		FC7564891D6C1B280018C169 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		FC75648B1D6C1F260018C169 /* IntentsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentsInfo.h; sourceTree = "<group>"; };
+		FC75648C1D6C1F260018C169 /* IntentsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentsInfo.m; sourceTree = "<group>"; };
+		FC7564901D6C252E0018C169 /* Ringtone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ringtone.caf; sourceTree = "<group>"; };
+		FC7564A11D6C29A70018C169 /* CallAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallAudio.h; sourceTree = "<group>"; };
+		FC7564A21D6C29A70018C169 /* CallAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallAudio.m; sourceTree = "<group>"; };
+		FC7564A41D6C29B80018C169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FC7564A61D6C29C10018C169 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FC7564A81D6C3E960018C169 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		FC7564AA1D6C3F010018C169 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FC7564AB1D6C3F010018C169 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FC7564AC1D6C3F010018C169 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FC7564AD1D6C3F010018C169 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FC7564AE1D6C3F010018C169 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC7564C91D6C426F0018C169 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC7564CB1D6C42740018C169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC7565B31D6C64870018C169 /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		FC7565B41D6C64870018C169 /* CADebugMacros.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CADebugMacros.mm; sourceTree = "<group>"; };
+		FC7565B51D6C64870018C169 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		FC7565B61D6C64870018C169 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		FC7565B71D6C64870018C169 /* CAStreamBasicDescription.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAStreamBasicDescription.mm; sourceTree = "<group>"; };
+		FC7565B81D6C64870018C169 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		FC7565B91D6C64870018C169 /* CAXException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAXException.mm; sourceTree = "<group>"; };
+		FC7565BA1D6C64870018C169 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		FC7565BE1D6C64B10018C169 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		FC7565BF1D6C64B10018C169 /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		FC7A841F1D647DC600DCF6BA /* CallBlockingIdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallBlockingIdentificationViewController.h; sourceTree = "<group>"; };
+		FC7A84201D647DC600DCF6BA /* CallBlockingIdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallBlockingIdentificationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FC7D52321D6D4FF1001E350D /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_128x128.png; sourceTree = "<group>"; };
+		FC7D52331D6D4FF1001E350D /* icon_128x128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_128x128@2x.png"; sourceTree = "<group>"; };
+		FC7D52341D6D4FF1001E350D /* icon_128x128@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_128x128@3x.png"; sourceTree = "<group>"; };
+		FC7E21CD1D6556FD002523E1 /* OnePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnePrefixHeader.pch; sourceTree = "<group>"; };
+		FC7E21E81D657585002523E1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FC7E21E91D657585002523E1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FC7E21F01D657EDB002523E1 /* OneCallKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneCallKitDemo.entitlements; sourceTree = "<group>"; };
+		FCBFFC221D65B566003C39BF /* JSONFighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONFighting.h; sourceTree = "<group>"; };
+		FCBFFC231D65B566003C39BF /* JSONFighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONFighting.m; sourceTree = "<group>"; };
+		FCBFFC2C1D65B7BB003C39BF /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		FCBFFC2F1D65B813003C39BF /* CallDirectoryBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallDirectoryBaseModel.h; sourceTree = "<group>"; };
+		FCBFFC301D65B813003C39BF /* CallDirectoryBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryBaseModel.m; sourceTree = "<group>"; };
+		FCBFFC331D65B8C6003C39BF /* CallDirectoryPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallDirectoryPhoneModel.h; sourceTree = "<group>"; };
+		FCBFFC341D65B8C6003C39BF /* CallDirectoryPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryPhoneModel.m; sourceTree = "<group>"; };
+		FCD6281D1D64792600C60155 /* OneCallKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneCallKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD628211D64792600C60155 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCD628231D64792600C60155 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCD628241D64792600C60155 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCD628261D64792600C60155 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FCD628271D64792600C60155 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FCD6282A1D64792600C60155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCD6282C1D64792600C60155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD6282F1D64792600C60155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCD628311D64792600C60155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE58CB71D670B5A00D3B263 /* CallVoIPManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallVoIPManagerViewController.h; sourceTree = "<group>"; };
+		FCE58CB81D670B5A00D3B263 /* CallVoIPManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallVoIPManagerViewController.m; sourceTree = "<group>"; };
+		FCE7DC0F1D6D73DC00714614 /* SimulateIncomingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateIncomingCallViewController.h; sourceTree = "<group>"; };
+		FCE7DC101D6D73DC00714614 /* SimulateIncomingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateIncomingCallViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC02231C1D8FDB0F00D3BF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4A11D891FE300562121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2C8A251D892561009AF960 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4B11D89200500562121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2C8A241D89255B009AF960 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC23B6E71D6AD5DA00F127C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1D58711D6AE57E006048F4 /* CallKit.framework in Frameworks */,
+				FC23B6F71D6AE1E900F127C9 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC301E4E1D6A90E8003950DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC301E541D6A90E8003950DA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD6281A1D64792600C60155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7564CC1D6C42740018C169 /* UIKit.framework in Frameworks */,
+				FC7564CA1D6C426F0018C169 /* CoreGraphics.framework in Frameworks */,
+				FC7564AF1D6C3F010018C169 /* CoreFoundation.framework in Frameworks */,
+				FC7564B01D6C3F010018C169 /* CoreTelephony.framework in Frameworks */,
+				FC7564B11D6C3F010018C169 /* CoreText.framework in Frameworks */,
+				FC7564B21D6C3F010018C169 /* MobileCoreServices.framework in Frameworks */,
+				FC7564B31D6C3F010018C169 /* QuartzCore.framework in Frameworks */,
+				FC7564A91D6C3E960018C169 /* CoreAudio.framework in Frameworks */,
+				FC7564A71D6C29C10018C169 /* AudioToolbox.framework in Frameworks */,
+				FC7564A51D6C29B80018C169 /* AVFoundation.framework in Frameworks */,
+				FC75648A1D6C1B280018C169 /* PushKit.framework in Frameworks */,
+				FC7564881D6C1B220018C169 /* CallKit.framework in Frameworks */,
+				FC7564871D6C1B1A0018C169 /* Intents.framework in Frameworks */,
+				FC23B6F81D6AE1F100F127C9 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC0223201D8FDB0F00D3BF11 /* OneCallIdentification2 */ = {
+			isa = PBXGroup;
+			children = (
+				FC02232B1D8FDB1A00D3BF11 /* OneCallIdentification2.entitlements */,
+				FC0223211D8FDB0F00D3BF11 /* CallDirectoryHandler.h */,
+				FC0223221D8FDB0F00D3BF11 /* CallDirectoryHandler.m */,
+				FC0223241D8FDB0F00D3BF11 /* Info.plist */,
+			);
+			path = OneCallIdentification2;
+			sourceTree = "<group>";
+		};
+		FC19A4A51D891FE300562121 /* OneCallBlocking */ = {
+			isa = PBXGroup;
+			children = (
+				FC19A4C11D8923FC00562121 /* OneCallBlocking.entitlements */,
+				FC19A4A61D891FE300562121 /* CallDirectoryHandler.h */,
+				FC19A4A71D891FE300562121 /* CallDirectoryHandler.m */,
+				FC19A4A91D891FE300562121 /* Info.plist */,
+			);
+			path = OneCallBlocking;
+			sourceTree = "<group>";
+		};
+		FC19A4B51D89200600562121 /* OneCallIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				FC19A4C01D8923F500562121 /* OneCallIdentification.entitlements */,
+				FC19A4B61D89200600562121 /* CallDirectoryHandler.h */,
+				FC19A4B71D89200600562121 /* CallDirectoryHandler.m */,
+				FC19A4B91D89200600562121 /* Info.plist */,
+			);
+			path = OneCallIdentification;
+			sourceTree = "<group>";
+		};
+		FC1D586C1D6AE4EF006048F4 /* Call Management */ = {
+			isa = PBXGroup;
+			children = (
+				FC1D586D1D6AE51A006048F4 /* WTCallManager.h */,
+				FC1D586E1D6AE51A006048F4 /* WTCallManager.m */,
+				FC1D58721D6AE6CC006048F4 /* WTCall.h */,
+				FC1D58731D6AE6CC006048F4 /* WTCall.m */,
+			);
+			path = "Call Management";
+			sourceTree = "<group>";
+		};
+		FC23B6EB1D6AD5DA00F127C9 /* CallKitIntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FC0223121D8FC61A00D3BF11 /* CallKitIntentsExtension.entitlements */,
+				FC23B6EC1D6AD5DA00F127C9 /* IntentHandler.h */,
+				FC23B6ED1D6AD5DA00F127C9 /* IntentHandler.m */,
+				FC23B6EF1D6AD5DA00F127C9 /* Info.plist */,
+			);
+			path = CallKitIntentsExtension;
+			sourceTree = "<group>";
+		};
+		FC301E521D6A90E8003950DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC7564CB1D6C42740018C169 /* UIKit.framework */,
+				FC7564C91D6C426F0018C169 /* CoreGraphics.framework */,
+				FC7564AA1D6C3F010018C169 /* CoreFoundation.framework */,
+				FC7564AB1D6C3F010018C169 /* CoreTelephony.framework */,
+				FC7564AC1D6C3F010018C169 /* CoreText.framework */,
+				FC7564AD1D6C3F010018C169 /* MobileCoreServices.framework */,
+				FC7564AE1D6C3F010018C169 /* QuartzCore.framework */,
+				FC7564A81D6C3E960018C169 /* CoreAudio.framework */,
+				FC7564A61D6C29C10018C169 /* AudioToolbox.framework */,
+				FC7564A41D6C29B80018C169 /* AVFoundation.framework */,
+				FC7564891D6C1B280018C169 /* PushKit.framework */,
+				FC7564861D6C1B1A0018C169 /* Intents.framework */,
+				FC1D58701D6AE57E006048F4 /* CallKit.framework */,
+				FC23B6F61D6AE1E900F127C9 /* Accelerate.framework */,
+				FC301E531D6A90E8003950DA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC301E551D6A90E8003950DA /* OneCallToday */ = {
+			isa = PBXGroup;
+			children = (
+				FC301E631D6A90F5003950DA /* OneCallToday.entitlements */,
+				FC301E561D6A90E8003950DA /* TodayViewController.h */,
+				FC301E571D6A90E9003950DA /* TodayViewController.m */,
+				FC301E591D6A90E9003950DA /* MainInterface.storyboard */,
+				FC301E5C1D6A90E9003950DA /* Info.plist */,
+			);
+			path = OneCallToday;
+			sourceTree = "<group>";
+		};
+		FC571D021D6AC53300E86CEC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		FC571D031D6AC53F00E86CEC /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				FC571D041D6AC63700E86CEC /* CallDirectoryManager.h */,
+				FC571D051D6AC63700E86CEC /* CallDirectoryManager.m */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		FC75647D1D6BF81A0018C169 /* Start Call Handling */ = {
+			isa = PBXGroup;
+			children = (
+				FC7564801D6BF9400018C169 /* NSURL+StartCallConvertible.h */,
+				FC7564811D6BF9400018C169 /* NSURL+StartCallConvertible.m */,
+				FC7564831D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.h */,
+				FC7564841D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.m */,
+				FC75648B1D6C1F260018C169 /* IntentsInfo.h */,
+				FC75648C1D6C1F260018C169 /* IntentsInfo.m */,
+			);
+			path = "Start Call Handling";
+			sourceTree = "<group>";
+		};
+		FC75648E1D6C24DE0018C169 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D52321D6D4FF1001E350D /* icon_128x128.png */,
+				FC7D52331D6D4FF1001E350D /* icon_128x128@2x.png */,
+				FC7D52341D6D4FF1001E350D /* icon_128x128@3x.png */,
+				FC75648F1D6C25060018C169 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC75648F1D6C25060018C169 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FC7564901D6C252E0018C169 /* Ringtone.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FC7564921D6C29370018C169 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FC7564A11D6C29A70018C169 /* CallAudio.h */,
+				FC7564A21D6C29A70018C169 /* CallAudio.m */,
+				FC7565BE1D6C64B10018C169 /* AudioController.h */,
+				FC7565BF1D6C64B10018C169 /* AudioController.mm */,
+				FC7565B31D6C64870018C169 /* CABitOperations.h */,
+				FC7565B41D6C64870018C169 /* CADebugMacros.mm */,
+				FC7565B51D6C64870018C169 /* CADebugMacros.h */,
+				FC7565B61D6C64870018C169 /* CAMath.h */,
+				FC7565B71D6C64870018C169 /* CAStreamBasicDescription.mm */,
+				FC7565B81D6C64870018C169 /* CAStreamBasicDescription.h */,
+				FC7565B91D6C64870018C169 /* CAXException.mm */,
+				FC7565BA1D6C64870018C169 /* CAXException.h */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		FC7E21CE1D6557B2002523E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC7E21CF1D6557CC002523E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6282E1D64792600C60155 /* LaunchScreen.storyboard */,
+				FCD628291D64792600C60155 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FC7E21D01D6557E1002523E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FCD628231D64792600C60155 /* AppDelegate.h */,
+				FCD628241D64792600C60155 /* AppDelegate.m */,
+				FC7564391D6BF21D0018C169 /* ProviderDelegate.h */,
+				FC75643A1D6BF21D0018C169 /* ProviderDelegate.m */,
+				FC634C301D7038DA0024E7A2 /* PushPKRegistryDelegate.h */,
+				FC634C311D7038DA0024E7A2 /* PushPKRegistryDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		FC7E21E21D655C30002523E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC3DC3261D6F035E00A2FA8E /* BaseNavigationViewController.h */,
+				FC3DC3271D6F035E00A2FA8E /* BaseNavigationViewController.m */,
+				FC3DC3281D6F035E00A2FA8E /* BaseViewController.h */,
+				FC3DC3291D6F035E00A2FA8E /* BaseViewController.m */,
+				FCE58CAC1D6708D300D3B263 /* Base */,
+				FCE58CAB1D67089D00D3B263 /* Home */,
+				FCBFFC371D65C661003C39BF /* CallBlockingIdentification */,
+				FCE58CB61D670AD400D3B263 /* CallVoIP */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC7E21E41D656E21002523E1 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				FC571D021D6AC53300E86CEC /* New Group */,
+				FCBFFC211D65B566003C39BF /* JSONFighting */,
+				FC7E21E71D657585002523E1 /* MBProgressHUD */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		FC7E21E71D657585002523E1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FC7E21E81D657585002523E1 /* MBProgressHUD.h */,
+				FC7E21E91D657585002523E1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FCBFFC211D65B566003C39BF /* JSONFighting */ = {
+			isa = PBXGroup;
+			children = (
+				FCBFFC221D65B566003C39BF /* JSONFighting.h */,
+				FCBFFC231D65B566003C39BF /* JSONFighting.m */,
+			);
+			path = JSONFighting;
+			sourceTree = "<group>";
+		};
+		FCBFFC251D65B759003C39BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCBFFC2F1D65B813003C39BF /* CallDirectoryBaseModel.h */,
+				FCBFFC301D65B813003C39BF /* CallDirectoryBaseModel.m */,
+				FCBFFC331D65B8C6003C39BF /* CallDirectoryPhoneModel.h */,
+				FCBFFC341D65B8C6003C39BF /* CallDirectoryPhoneModel.m */,
+				FCBFFC2C1D65B7BB003C39BF /* DataModels.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCBFFC371D65C661003C39BF /* CallBlockingIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				FC7A841F1D647DC600DCF6BA /* CallBlockingIdentificationViewController.h */,
+				FC7A84201D647DC600DCF6BA /* CallBlockingIdentificationViewController.m */,
+			);
+			path = CallBlockingIdentification;
+			sourceTree = "<group>";
+		};
+		FCD628141D64792600C60155 = {
+			isa = PBXGroup;
+			children = (
+				FCD6281F1D64792600C60155 /* OneCallKitDemo */,
+				FC23B6EB1D6AD5DA00F127C9 /* CallKitIntentsExtension */,
+				FC301E551D6A90E8003950DA /* OneCallToday */,
+				FC19A4A51D891FE300562121 /* OneCallBlocking */,
+				FC19A4B51D89200600562121 /* OneCallIdentification */,
+				FC0223201D8FDB0F00D3BF11 /* OneCallIdentification2 */,
+				FC301E521D6A90E8003950DA /* Frameworks */,
+				FCD6281E1D64792600C60155 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD6281E1D64792600C60155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6281D1D64792600C60155 /* OneCallKitDemo.app */,
+				FC301E511D6A90E8003950DA /* OneCallToday.appex */,
+				FC23B6EA1D6AD5DA00F127C9 /* CallKitIntentsExtension.appex */,
+				FC19A4A41D891FE300562121 /* OneCallBlocking.appex */,
+				FC19A4B41D89200500562121 /* OneCallIdentification.appex */,
+				FC02231F1D8FDB0F00D3BF11 /* OneCallIdentification2.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD6281F1D64792600C60155 /* OneCallKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FC7E21F01D657EDB002523E1 /* OneCallKitDemo.entitlements */,
+				FCBFFC251D65B759003C39BF /* Models */,
+				FC7E21D01D6557E1002523E1 /* App */,
+				FC7E21CF1D6557CC002523E1 /* UI */,
+				FC7E21E21D655C30002523E1 /* Controllers */,
+				FC7E21CE1D6557B2002523E1 /* Views */,
+				FC571D031D6AC53F00E86CEC /* Single */,
+				FC7564921D6C29370018C169 /* Audio */,
+				FC75648E1D6C24DE0018C169 /* Resources */,
+				FC75647D1D6BF81A0018C169 /* Start Call Handling */,
+				FC1D586C1D6AE4EF006048F4 /* Call Management */,
+				FC7E21E41D656E21002523E1 /* Third */,
+				FCD6282C1D64792600C60155 /* Assets.xcassets */,
+				FCD628201D64792600C60155 /* Supporting Files */,
+			);
+			path = OneCallKitDemo;
+			sourceTree = "<group>";
+		};
+		FCD628201D64792600C60155 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1D58751D6AF4F7006048F4 /* OneCallKitDemo-Bridging-Header.h */,
+				FCD628311D64792600C60155 /* Info.plist */,
+				FCD628211D64792600C60155 /* main.m */,
+				FC7E21CD1D6556FD002523E1 /* OnePrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCE58CAB1D67089D00D3B263 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCD628261D64792600C60155 /* HomeViewController.h */,
+				FCD628271D64792600C60155 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FCE58CAC1D6708D300D3B263 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base;
+			path = "Home&Base";
+			sourceTree = "<group>";
+		};
+		FCE58CB61D670AD400D3B263 /* CallVoIP */ = {
+			isa = PBXGroup;
+			children = (
+				FCE58CB71D670B5A00D3B263 /* CallVoIPManagerViewController.h */,
+				FCE58CB81D670B5A00D3B263 /* CallVoIPManagerViewController.m */,
+				FCE7DC0F1D6D73DC00714614 /* SimulateIncomingCallViewController.h */,
+				FCE7DC101D6D73DC00714614 /* SimulateIncomingCallViewController.m */,
+			);
+			path = CallVoIP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC02231E1D8FDB0F00D3BF11 /* OneCallIdentification2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0223281D8FDB0F00D3BF11 /* Build configuration list for PBXNativeTarget "OneCallIdentification2" */;
+			buildPhases = (
+				FC02231B1D8FDB0F00D3BF11 /* Sources */,
+				FC02231C1D8FDB0F00D3BF11 /* Frameworks */,
+				FC02231D1D8FDB0F00D3BF11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneCallIdentification2;
+			productName = OneCallIdentification2;
+			productReference = FC02231F1D8FDB0F00D3BF11 /* OneCallIdentification2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FC19A4A31D891FE300562121 /* OneCallBlocking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC19A4AF1D891FE300562121 /* Build configuration list for PBXNativeTarget "OneCallBlocking" */;
+			buildPhases = (
+				FC19A4A01D891FE300562121 /* Sources */,
+				FC19A4A11D891FE300562121 /* Frameworks */,
+				FC19A4A21D891FE300562121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneCallBlocking;
+			productName = OneCallBlocking;
+			productReference = FC19A4A41D891FE300562121 /* OneCallBlocking.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FC19A4B31D89200500562121 /* OneCallIdentification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC19A4BD1D89200600562121 /* Build configuration list for PBXNativeTarget "OneCallIdentification" */;
+			buildPhases = (
+				FC19A4B01D89200500562121 /* Sources */,
+				FC19A4B11D89200500562121 /* Frameworks */,
+				FC19A4B21D89200500562121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneCallIdentification;
+			productName = OneCallIdentification;
+			productReference = FC19A4B41D89200500562121 /* OneCallIdentification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FC23B6E91D6AD5DA00F127C9 /* CallKitIntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC23B6F51D6AD5DB00F127C9 /* Build configuration list for PBXNativeTarget "CallKitIntentsExtension" */;
+			buildPhases = (
+				FC23B6E61D6AD5DA00F127C9 /* Sources */,
+				FC23B6E71D6AD5DA00F127C9 /* Frameworks */,
+				FC23B6E81D6AD5DA00F127C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallKitIntentsExtension;
+			productName = CallKitIntentsExtension;
+			productReference = FC23B6EA1D6AD5DA00F127C9 /* CallKitIntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FC301E501D6A90E8003950DA /* OneCallToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC301E621D6A90E9003950DA /* Build configuration list for PBXNativeTarget "OneCallToday" */;
+			buildPhases = (
+				FC301E4D1D6A90E8003950DA /* Sources */,
+				FC301E4E1D6A90E8003950DA /* Frameworks */,
+				FC301E4F1D6A90E8003950DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneCallToday;
+			productName = OneCallToday;
+			productReference = FC301E511D6A90E8003950DA /* OneCallToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FCD6281C1D64792600C60155 /* OneCallKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD628341D64792600C60155 /* Build configuration list for PBXNativeTarget "OneCallKitDemo" */;
+			buildPhases = (
+				FCD628191D64792600C60155 /* Sources */,
+				FCD6281A1D64792600C60155 /* Frameworks */,
+				FCD6281B1D64792600C60155 /* Resources */,
+				FC7E21E11D655BC6002523E1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCF9B47D1D89385D009102B2 /* PBXTargetDependency */,
+				FC23B6F11D6AD5DA00F127C9 /* PBXTargetDependency */,
+				FC7564381D6BEA0D0018C169 /* PBXTargetDependency */,
+				FC19A4AB1D891FE300562121 /* PBXTargetDependency */,
+				FC0223261D8FDB0F00D3BF11 /* PBXTargetDependency */,
+			);
+			name = OneCallKitDemo;
+			productName = OneCallKitDemo;
+			productReference = FCD6281D1D64792600C60155 /* OneCallKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD628151D64792600C60155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wintel;
+				TargetAttributes = {
+					FC02231E1D8FDB0F00D3BF11 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FC19A4A31D891FE300562121 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FC19A4B31D89200500562121 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FC23B6E91D6AD5DA00F127C9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FC301E501D6A90E8003950DA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FCD6281C1D64792600C60155 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SM4XKFF6K3;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FCD628181D64792600C60155 /* Build configuration list for PBXProject "OneCallKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCD628141D64792600C60155;
+			productRefGroup = FCD6281E1D64792600C60155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCD6281C1D64792600C60155 /* OneCallKitDemo */,
+				FC23B6E91D6AD5DA00F127C9 /* CallKitIntentsExtension */,
+				FC301E501D6A90E8003950DA /* OneCallToday */,
+				FC19A4A31D891FE300562121 /* OneCallBlocking */,
+				FC19A4B31D89200500562121 /* OneCallIdentification */,
+				FC02231E1D8FDB0F00D3BF11 /* OneCallIdentification2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC02231D1D8FDB0F00D3BF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4A21D891FE300562121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4B21D89200500562121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC23B6E81D6AD5DA00F127C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC301E4F1D6A90E8003950DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC301E5B1D6A90E9003950DA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD6281B1D64792600C60155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7D52361D6D4FF1001E350D /* icon_128x128@2x.png in Resources */,
+				FC7D52371D6D4FF1001E350D /* icon_128x128@3x.png in Resources */,
+				FCD628301D64792600C60155 /* LaunchScreen.storyboard in Resources */,
+				FCD6282D1D64792600C60155 /* Assets.xcassets in Resources */,
+				FC7D52351D6D4FF1001E350D /* icon_128x128.png in Resources */,
+				FC7564911D6C252E0018C169 /* Ringtone.caf in Resources */,
+				FCD6282B1D64792600C60155 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC02231B1D8FDB0F00D3BF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0223231D8FDB0F00D3BF11 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4A01D891FE300562121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC19A4A81D891FE300562121 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC19A4B01D89200500562121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC19A4B81D89200600562121 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC23B6E61D6AD5DA00F127C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC23B6EE1D6AD5DA00F127C9 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC301E4D1D6A90E8003950DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC301E581D6A90E9003950DA /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD628191D64792600C60155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD628221D64792600C60155 /* main.m in Sources */,
+				FC3DC32B1D6F035E00A2FA8E /* BaseViewController.m in Sources */,
+				FC7564851D6BFBE20018C169 /* NSUserActivity+StartCallConvertible.m in Sources */,
+				FC7564A31D6C29A70018C169 /* CallAudio.m in Sources */,
+				FCBFFC311D65B813003C39BF /* CallDirectoryBaseModel.m in Sources */,
+				FC1D58741D6AE6CC006048F4 /* WTCall.m in Sources */,
+				FC1D586F1D6AE51A006048F4 /* WTCallManager.m in Sources */,
+				FC75643B1D6BF21D0018C169 /* ProviderDelegate.m in Sources */,
+				FCE58CB91D670B5A00D3B263 /* CallVoIPManagerViewController.m in Sources */,
+				FC634C321D7038DA0024E7A2 /* PushPKRegistryDelegate.m in Sources */,
+				FCE7DC111D6D73DC00714614 /* SimulateIncomingCallViewController.m in Sources */,
+				FCBFFC241D65B566003C39BF /* JSONFighting.m in Sources */,
+				FC75648D1D6C1F260018C169 /* IntentsInfo.m in Sources */,
+				FC3DC32A1D6F035E00A2FA8E /* BaseNavigationViewController.m in Sources */,
+				FCBFFC351D65B8C6003C39BF /* CallDirectoryPhoneModel.m in Sources */,
+				FCD628281D64792600C60155 /* HomeViewController.m in Sources */,
+				FC7E21EA1D657585002523E1 /* MBProgressHUD.m in Sources */,
+				FCD628251D64792600C60155 /* AppDelegate.m in Sources */,
+				FC571D061D6AC63700E86CEC /* CallDirectoryManager.m in Sources */,
+				FC7564821D6BF9400018C169 /* NSURL+StartCallConvertible.m in Sources */,
+				FC7A84211D647DC600DCF6BA /* CallBlockingIdentificationViewController.m in Sources */,
+				FC7565C01D6C64B10018C169 /* AudioController.mm in Sources */,
+				FC7565BB1D6C64870018C169 /* CADebugMacros.mm in Sources */,
+				FC7565BD1D6C64870018C169 /* CAXException.mm in Sources */,
+				FC7565BC1D6C64870018C169 /* CAStreamBasicDescription.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC0223261D8FDB0F00D3BF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC02231E1D8FDB0F00D3BF11 /* OneCallIdentification2 */;
+			targetProxy = FC0223251D8FDB0F00D3BF11 /* PBXContainerItemProxy */;
+		};
+		FC19A4AB1D891FE300562121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC19A4A31D891FE300562121 /* OneCallBlocking */;
+			targetProxy = FC19A4AA1D891FE300562121 /* PBXContainerItemProxy */;
+		};
+		FC23B6F11D6AD5DA00F127C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC23B6E91D6AD5DA00F127C9 /* CallKitIntentsExtension */;
+			targetProxy = FC23B6F01D6AD5DA00F127C9 /* PBXContainerItemProxy */;
+		};
+		FC7564381D6BEA0D0018C169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC301E501D6A90E8003950DA /* OneCallToday */;
+			targetProxy = FC7564371D6BEA0D0018C169 /* PBXContainerItemProxy */;
+		};
+		FCF9B47D1D89385D009102B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC19A4B31D89200500562121 /* OneCallIdentification */;
+			targetProxy = FCF9B47C1D89385D009102B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC301E591D6A90E9003950DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC301E5A1D6A90E9003950DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		FCD628291D64792600C60155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD6282A1D64792600C60155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCD6282E1D64792600C60155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD6282F1D64792600C60155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC0223291D8FDB0F00D3BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallIdentification2/OneCallIdentification2.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallIdentification2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallIdentification2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC02232A1D8FDB0F00D3BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallIdentification2/OneCallIdentification2.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallIdentification2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallIdentification2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC19A4AD1D891FE300562121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallBlocking/OneCallBlocking.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallBlocking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallBlocking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC19A4AE1D891FE300562121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallBlocking/OneCallBlocking.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallBlocking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallBlocking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC19A4BE1D89200600562121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallIdentification/OneCallIdentification.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallIdentification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC19A4BF1D89200600562121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = OneCallIdentification/OneCallIdentification.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallIdentification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC23B6F31D6AD5DA00F127C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitIntentsExtension/CallKitIntentsExtension.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = CallKitIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.CallKitIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC23B6F41D6AD5DA00F127C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitIntentsExtension/CallKitIntentsExtension.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = CallKitIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.CallKitIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC301E601D6A90E9003950DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneCallToday/OneCallToday.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC301E611D6A90E9003950DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneCallToday/OneCallToday.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				INFOPLIST_FILE = OneCallToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo.OneCallToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCD628321D64792600C60155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCD628331D64792600C60155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCD628351D64792600C60155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OneCallKitDemo/OneCallKitDemo.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OneCallKitDemo/OnePrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = OneCallKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OneCallKitDemo/Audio/libAudioController",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneCallKitDemo/Call Management/OneCallKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FCD628361D64792600C60155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OneCallKitDemo/OneCallKitDemo.entitlements;
+				DEVELOPMENT_TEAM = SM4XKFF6K3;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OneCallKitDemo/OnePrefixHeader.pch";
+				INFOPLIST_FILE = OneCallKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OneCallKitDemo/Audio/libAudioController",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wintel.OneCallKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OneCallKitDemo/Call Management/OneCallKitDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC0223281D8FDB0F00D3BF11 /* Build configuration list for PBXNativeTarget "OneCallIdentification2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0223291D8FDB0F00D3BF11 /* Debug */,
+				FC02232A1D8FDB0F00D3BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC19A4AF1D891FE300562121 /* Build configuration list for PBXNativeTarget "OneCallBlocking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC19A4AD1D891FE300562121 /* Debug */,
+				FC19A4AE1D891FE300562121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC19A4BD1D89200600562121 /* Build configuration list for PBXNativeTarget "OneCallIdentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC19A4BE1D89200600562121 /* Debug */,
+				FC19A4BF1D89200600562121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC23B6F51D6AD5DB00F127C9 /* Build configuration list for PBXNativeTarget "CallKitIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC23B6F31D6AD5DA00F127C9 /* Debug */,
+				FC23B6F41D6AD5DA00F127C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC301E621D6A90E9003950DA /* Build configuration list for PBXNativeTarget "OneCallToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC301E601D6A90E9003950DA /* Debug */,
+				FC301E611D6A90E9003950DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD628181D64792600C60155 /* Build configuration list for PBXProject "OneCallKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD628321D64792600C60155 /* Debug */,
+				FCD628331D64792600C60155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD628341D64792600C60155 /* Build configuration list for PBXNativeTarget "OneCallKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD628351D64792600C60155 /* Debug */,
+				FCD628361D64792600C60155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCD628151D64792600C60155 /* Project object */;
+}
