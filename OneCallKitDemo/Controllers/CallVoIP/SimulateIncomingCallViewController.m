@@ -83,8 +83,7 @@
     stringPhone = [stringPhone stringByReplacingOccurrencesOfString:@"(" withString:@""];
     stringPhone = [stringPhone stringByReplacingOccurrencesOfString:@")" withString:@""];
     if (stringPhone != nil && stringPhone.length > 0) {
-        NSInteger phonenumebr = [stringPhone longLongValue];
-        NSString *stringFinal = [NSString stringWithFormat:@"%@%ld",([stringPhone hasPrefix:@"86"]?@"":@"86"),phonenumebr];
+        NSString *stringFinal = [NSString stringWithFormat:@"%@%@",([stringPhone hasPrefix:@"86"]?@"":@"86"),stringPhone];
         return stringFinal;
     }
     return stringPhone;
